@@ -1,0 +1,45 @@
+.si-scoring__dropBox{
+    display: flex;
+}
+.si-scoring__playersScore .si-tbl__head .si-tbl__row{
+    display: table-row;
+}
+.hiderow{
+    display: none;
+}
+ .si-tabs ul li
+{
+    display: flex;
+}
+
+/* .si-scoring__container .si-tbl__row {
+    height: 58px!important;
+}
+
+.si-scoring__playersScore .si-tbl__cell {
+    width: 68px!important;
+} */
+
+.si-scoring__playersScore .si-lineupbtn span {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.si-scoring__playersScore .si-lineupbtn {
+    border: 1px solid #000;
+    width: 145px;
+    height: 31px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 24px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #2a0835 50%, #0e0842 100%);
+    color: #fff;
+}
+
+.si-lineupbtn{
+    display: flex;
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.si-popup .si-tbls__row, .si-popup .si-popupheader {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.si-popup .si-popupheader {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  background: -webkit-linear-gradient(-45deg, #2a0835 50%, #0e0842 100%);
+  background: -moz-linear-gradient(-45deg, #2a0835 50%, #0e0842 100%);
+  background: -ms-linear-gradient(-45deg, #2a0835 50%, #0e0842 100%);
+  background: -o-linear-gradient(-45deg, #2a0835 50%, #0e0842 100%);
+  background: linear-gradient(-45deg, #2a0835 50%, #0e0842 100%);
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.si-popup .si-popup-close {
+  right: 18px !important;
+  top: 11px !important;
+  z-index: 1 !important;
+  border: 1px solid;
+  width: 25px;
+  height: 25px;
+}
+.si-popup .si-popup-close:after {
+  top: 3px;
+  position: absolute;
+  left: 3px;
+}
+.si-popup .si-popup-close .si-icon.si-closeBtn {
+  width: auto;
+  height: auto;
+}
+.si-popup .si-popupwrapper {
+  padding: 10px;
+}
+.si-popup .si-popup-modal {
+  -webkit-border-radius: 30px 30px 12px 12px;
+  -moz-border-radius: 30px 30px 12px 12px;
+  -ms-border-radius: 30px 30px 12px 12px;
+  -o-border-radius: 30px 30px 12px 12px;
+  border-radius: 30px 30px 12px 12px;
+}
+.si-popup .si-popup-modal.si-playerPopup {
+  max-width: 1116px;
+  width: 100%;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-match, .si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-strikrate {
+  flex: 0 0 10%;
+  width: 10%;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-runs, .si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-wicket, .si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-Catches {
+  flex: 0 0 7%;
+  width: 7%;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-eco, .si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-batsman, .si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-bowler {
+  flex: 0 0 12%;
+  width: 12%;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-allrounder {
+  flex: 0 0 14%;
+  width: 14%;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-tbls__cell.si-WK {
+  flex: 0 0 9%;
+  width: 9%;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-bold {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 0;
+}
+.si-popup .si-popup-modal.si-playerPopup .si-bold .si-tbls__cell {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.si-popup .si-tbls {
+  height: calc(100vh - 234px);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.si-popup .si-tbls__head {
+  background-color: #dfdfdf;
+}
+.si-popup .si-tbls__head .si-tbls__row {
+  height: 40px;
+  border-bottom: none;
+}
+.si-popup .si-tbls__head .si-tbls__cell {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #f95058;
+  font-size: 14px;
+}
+.si-popup .si-tbls .si-whiteBox {
+  height: calc(100% - 40px);
+}
+.si-popup .si-tbls .si-whiteBox .swiper-container {
+  height: 100%;
+}
+.si-popup .si-tbls .si-whiteBox .swiper-scrollbar-drag {
+  background: #f95058;
+}
+.si-popup .si-tbls__body {
+  background-color: #fff;
+}
+.si-popup .si-tbls__row {
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+}
+.si-popup .si-tbls__row:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.si-popup .si-tbls__cell {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #130840;
+  text-align: center;
+}
+/*# sourceMappingURL=player-popup.css.map */

@@ -1,0 +1,25 @@
+
+  .si-valuation2{
+    margin:12px;
+    margin-bottom: 0;
+ 
+    .si-tbls {
+    //   height: calc(100vh - 189px);
+    height: 100% !important;
+      border:none;
+      @extend %flexbox;
+      flex-flow: column;
+      width: 100%;
+  
+    
+    
+
+      &__body { 
+        height: 403px;
+        overflow-y: auto;
+     
+      } 
+     
+     
+  } 
+  }

@@ -1,0 +1,204 @@
+
+.si-popup { 
+    
+    .si-seriesheading{
+        text-align: center;
+        font-family: $bold_font-family;
+        font-weight: $bold_font-weight;
+        padding-top: 10px;
+    }
+    .si-popup {
+        &header {
+            position: relative;
+            width: 100%;
+            height: 52px;
+            @include linearGradient(-45deg, #2a0835 50%, #0e0842 100%);
+            @extend %flexbox;
+            justify-content: center;
+            align-items: center;
+            @include border-radius(50px);
+            font-family: $bold_font-family;
+            font-weight: $bold_font-weight;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: $white;
+      
+        }
+
+        &-close {
+            right: 18px !important;
+            top: 11px !important;
+            z-index: 1 !important;
+            // background: transparent !important;
+            border: 1px solid;
+            width: 25px;
+            height: 25px;
+
+            &:after {
+                top: 3px;
+                position: absolute;
+                left: 3px;
+            }
+
+            .si-icon {
+                &.si-closeBtn {
+                    width: auto;
+                    height: auto;
+
+                    &::after {
+                        // content: "\e908";
+                        // border: 1px solid $white;
+                        // color: $white;
+                        // font-size: 11px;
+                    }
+                }
+            }
+        }
+        
+        
+      
+    }
+
+    & &wrapper {
+        padding: 10px;
+        .si-errormsg{
+            @extend %flexbox;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            margin: auto;
+            height: 100%;
+            background: #add8e666;
+            span{
+                display: block;
+                font-family: $bold_font-family;
+                font-weight: $bold_font-weight;
+                font-size: 20px;
+                text-align: center;
+                padding-bottom: 12px;
+                color: $gray;
+            }
+        }
+    }
+
+    & &-modal {
+        @include border-radius(30px 30px 12px 12px);
+
+        &.si-playerPopup,&.si-rolePopup,&.si-rolePopup2,&.si-playerPopup2 {
+            max-width: 1116px;
+            width: 100%; 
+            .si-tbls { 
+                height: calc(100vh - 330px);
+                width: 100%;
+                border-collapse: collapse;
+               .si-whiteBox{
+                height: calc(100% - 55px)
+                }
+                &__row{
+                    display: table-row;
+                }
+                &__cell {
+                    &.si-match{
+                        // flex:0 0 17%;
+                        width:17%
+                    }
+                 &.si-strikrate,&.si-eco{
+                        // flex:0 0 10%;
+                        // width:10%
+                        // flex:1;
+                    }
+                   &.si-Catches,&.si-cmatch{
+                        // flex:0 0 7%;
+                        width:7%
+                    }  
+                    &.si-runs{
+                    //   flex:0 0 5%;
+                      width:5%;
+                    }
+                    &.si-wicket{
+                    //   flex:1;
+                    }
+                &.si-batsman,&.si-bowler{
+                        // flex:0 0 10%;
+                        // width:10%
+                        // flex:1;
+                    } 
+                    &.si-allrounder{
+                        // flex: 0 0 12%;
+                        // width:12%;
+                        // flex:1;
+                    }
+                    &.si-WK{
+                    //   flex:0 0 8%;
+                    //   width:8%;
+                    // flex:1;
+                    }
+                } 
+      
+            } 
+          
+            .si-bold{
+                // border: 1px solid rgba($black, 0.2);
+                border-top:0;
+                .si-tbls__cell{
+                font-family: $bold_font-family;
+                font-weight: $bold_font-weight;
+                }
+            } 
+           
+        } 
+        &.si-rolePopup,&.si-rolePopup2{
+            .si-tbls {
+                border-collapse: collapse;
+                &__row{
+                    display: table-row;
+                }
+                &__cell {
+                //  flex:1;
+                &.si-player,&.si-team{
+                    // flex:0 0 17%;
+                    width: 17%;
+                }
+                } 
+             
+            } 
+        }
+        .si-drpDwn{
+            width:114px;
+            position: absolute;
+            right: 64px;
+            &__value {
+                @include border-radius(50px);
+                padding: 7px 16px 7px;
+                padding-right: 40px;
+                height: 30px;
+      
+                span {
+                    margin-bottom: 0;
+                    line-height: 1;
+                    padding: 0;
+                }
+            } 
+            &__list {
+                padding-top: 30px;
+      
+                ul {
+                    height: 76px;
+                }
+            }
+        } 
+        .si-left2{
+            text-align: left !important;
+        }
+    }
+
+
+
+    
+    
+
+}
+
+
+
+

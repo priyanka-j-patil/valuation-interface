@@ -1,0 +1,97 @@
+.si-tbls {
+    height: calc(100vh - 234px);
+    overflow: hidden;
+     border: 1px solid rgba($black, 0.2);
+    &__head,thead {
+        background-color: #dfdfdf;
+        //@include border-radius(15px);
+  
+        .si-tbls {
+            &__row {
+                height: 40px;
+                border-bottom: none;
+            }
+  
+            &__cell {
+                text-align: center;
+                font-family: $bold_font-family;
+                font-weight: $bold_font-weight;
+                text-transform: capitalize;
+                // color: $client-secondary-color;
+                color:$black;
+                font-size: 14px;
+               
+              
+            }
+            .si-left2{
+                text-align: left !important;
+            }
+        }
+    }
+  
+    .si-whiteBox {
+        height: calc(100% - 40px);
+  
+        .swiper-container {
+            height: 100%;
+        }
+  
+        .swiper-scrollbar-drag {
+            background: $client-primary-color;
+        }
+        .si-tbls__body{
+            .si-tbls__row {
+                 
+              &:last-of-type{
+                  .si-tbls__cell{
+                      .si-tooltips {
+                          top: -16px;
+                          bottom: inherit;
+                          &:before{
+                              top:7px;
+                          }
+                      }
+                  }
+              }
+           } 
+          }
+        
+
+    }
+  
+    &__body,tbody {
+        background-color: $white;
+      
+    }
+  
+    &__row {
+        @extend %flexbox;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 50px;
+        height: auto;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          }
+     
+    }
+  
+    &__cell {
+      //  flex:0 0 10%;
+      //   width: 10%;
+        padding: 10px;
+        font-family: $regular_font-family;
+        font-weight: $regular_font-weight;
+        text-transform: capitalize;
+        font-size: 14px;
+        color: $font-color;
+        text-align:center;
+      
+    
+  
+        
+    }
+    .si-left2{
+        text-align: left !important;
+    }
+  }

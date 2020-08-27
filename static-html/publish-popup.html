@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valuation-Interface</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="si-main">
+        <div class="si-wrapper">
+            <div class="si-page-bg">
+           
+            </div>
+        </div>
+        <div class="si-popup active">
+            <div class="si-popup-modal si-animated si-publishPopup">
+                <div class="si-popup-modal-bg">
+                    <span class="si-popup-close">
+                        <!-- <i class="si-icon si-closeBtn"></i> -->
+                    </span>
+                    <div class="si-popup-body">
+                      
+                        <div class="si-popupwrapper">
+                            <div class="si-suretext"><span>Are you sure you want to publish player valuation?</span></div>
+                            <div class="si-btnwrp">
+                               
+                                <div class="si-no">
+                                    <input type="submit"  value="CANCEL">
+                                </div>
+                                <div class="si-yes">
+                                    <input type="submit"  value="PUBLISH">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/libraries/jquery.min.js"></script>
+    <script src="../js/libraries/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            mousewheel: true,
+        });
+    </script>
+
+</body>
+
+</html>

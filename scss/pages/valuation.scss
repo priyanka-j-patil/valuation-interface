@@ -1,0 +1,795 @@
+.si-cover{
+    @extend %flexbox;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+    // .si-dropDown__box{
+    //   @extend %flexbox;
+    //   flex:0 0 25%;
+    //   width:25%;
+    //   justify-content: center;
+    //   align-items: center;
+    //   &:not(:last-child){
+    //     // margin-right: 20px;
+    // }
+    //   span{
+    //     font-family: $bold_font-family;
+    //     font-weight:$bold_font-weight;
+    //     width:238px;
+    //     font-size: 14px;
+    //     @extend %flexbox;
+    //     justify-content: flex-end;
+    //     align-items: center;
+    //   }  
+    //   .si-drpdwn{
+    //    margin-left: 9px;
+    //     & select{
+    //       height: 30px;
+    //       cursor: pointer;
+    //       width:190px;
+    //     }
+    //   }
+    // }
+    
+    .si-dropDown__box {
+      flex: 0 0 32%;
+      width: 32%;
+      padding: 0px 10px;
+      // margin-bottom: 15px;
+      @extend %flexbox;
+      align-items: center;
+     .si-drpdwn{
+      margin-left: 10px;
+      width:301px;
+      select{
+        @include border-radius(50px);
+        height: 30px;
+        padding: 0px 10px;
+        width:301px;
+      }
+     }
+      &.edit {
+          .input {
+              display: block;
+          }
+
+          .si-drpDwn {
+              display: none;
+          }
+      }
+
+      span {
+          text-transform: capitalize;
+          // font-family: $regular_font-family;
+          // font-weight: $regular_font-weight;
+          font-family: $medium_font-family;
+          font-weight: $medium_font-weight;
+          font-size: 15px;
+          color: $font-color;
+          padding-left: 10px;
+      }
+
+      .si-lbl {
+          @extend %flexbox;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0px;
+
+          .si-icon {
+              width: 20px;
+              height: 20px;
+              padding: 0;
+              cursor: pointer;
+              margin-bottom: 0;
+              margin-right: 15px;
+
+              &.si-edit {
+                  &::after {
+                      content: map-get($icons, edit);
+                      font-size: 26px;
+                  }
+              }
+          }
+      }
+
+      .input {
+          display: none;
+
+          input {
+              width: 100%;
+              border-radius: 50px;
+              border: none;
+              border: 1px solid $client-primary-color;
+              height: 40px;
+              padding: 10px;
+              font-family: $regular_font-family;
+              font-weight: $regular_font-weight;
+              font-size: 15px;
+              color: $font-color;
+          }
+      }
+
+      .si-timeBox {
+          @extend %flexbox;
+          align-items: center;
+          justify-content: flex-start;
+
+          .si-drpDwn {
+              flex: 0 0 32%;
+              width: 32%;
+
+              &:not(:last-child) {
+                  margin-right: 2%;
+              }
+          }
+      }
+  }
+
+  .si-drpDwn {
+      margin-top: 5px;
+      margin-left: 15px;
+
+      &.si-disable {
+          @include border-radius(50px);
+      }
+
+      &__value {
+          @include border-radius(50px);
+          padding: 7px 10px 7px;
+          padding-right: 40px;
+          height: 30px;
+
+          span {
+              margin-bottom: 0;
+              line-height: 1;
+              padding: 0;
+              font-size: 13px;
+          }
+      }
+
+      &__list {
+          padding-top: 30px;
+
+          ul {
+              height: 110px;
+
+              li {
+                  padding: 10px;
+                  font-family: $regular_font-family;
+                  font-weight: $regular_font-weight;
+                  font-size: 14px;
+              }
+          }
+      }
+  }
+ 
+ 
+  } 
+  .si-valuation,.si-valuation2{
+    margin:12px;
+    .myclass{
+      text-align: center;
+    margin: auto;
+    @extend %flexbox;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: $bold_font-family;
+    font-weight: $bold_font-weight;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: $gray;
+    }
+ 
+    .si-tbls {
+      height: calc(100vh - 189px);
+      border:none;
+      @extend %flexbox;
+      flex-flow: column;
+      width: 100%;
+  
+      .si-whiteBox {
+        height: calc(100% - 54px);
+
+    
+    } 
+    .si-bold{
+    
+        font-family: $bold_font-family;
+        font-weight: $bold_font-weight;
+      
+    }
+      .si-wrp{
+        @extend %flexbox;
+       } 
+      &__cell {
+        flex:1;
+        word-break: break-word;
+        select{
+          background: transparent;
+          border: none;
+          text-align: center;
+          font-family: $bold_font-family;
+          font-weight: $bold_font-weight;
+          text-transform: capitalize;
+          // color: $client-secondary-color;
+          color:$black;
+          font-size: 14px;
+          width: 100%;
+
+        }
+        .si-drpDwn{
+          width: 100px;
+     
+          &__value {
+            @include border-radius(50px);
+            padding: 7px 10px 7px;
+            padding-right: 40px;
+            height: 30px;
+  
+            span {
+                margin-bottom: 0;
+                line-height: 1;
+                padding: 0;
+                font-family: $medium_font-family;
+                font-weight: $medium_font-weight;
+                color: $client-secondary-color;
+            }
+        } 
+        .si-drpDwn__list ul {
+          height: 106px;
+          & li{
+            font-size: 12px;
+            padding: 10px 5px;
+          }
+        }
+      }
+      
+        &.si-player{
+          flex: 0 0 12%;
+          width:12%;
+          @extend %flexbox;
+          justify-content: center;
+          align-items: center;
+          & span{
+            // flex:0 0 90%;
+            flex:1;
+          }
+        }
+        &.si-role{
+         flex: 0 0 9%;
+         width:9%;
+         @extend %flexbox;
+        
+         justify-content: flex-start;
+         align-items: center;
+         padding-left: 6px;
+         & span{
+          flex:1;
+        }
+        } 
+        &.si-wrp{
+          // flex:0 0 29%;
+          // width:29%;
+          // flex:0 0 26%;
+          //  width:26%;      
+           position: relative;
+        
+          @extend %flexbox;
+          align-items: center;
+          // background-color: #ced4da;
+          // &:before {
+          //   content: " ";
+          //   position: absolute;
+          //   top: 0;
+          //   right: 0;
+          //   left:0;
+          //   bottom: 0;
+          //   // left: 50%;
+          //   z-index: 1;
+          //   width: 100%;
+          //   // margin-left: -250%;
+          //   -webkit-animation: phAnimation 0.8s linear infinite;
+          //   animation: phAnimation 0.8s linear infinite;
+          //   background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+        //}
+          .si-match{
+            flex:1;
+       
+          }
+          .si-icon{
+            width: 20px;
+            height: 27px;
+            padding: 0;
+            cursor: pointer;
+            margin-bottom: 0;
+            position: absolute;
+            border:1px solid  $black;
+            @include border-radius(5px);
+
+            &.si-left,&.si-right {
+              &::after {
+                  content: map-get($icons, downArrow);
+                  font-size: 12px;
+                  transform: rotate(90deg);
+                  color: $black;
+                  top: 7px;
+                  left: -2px;
+                  right: 0;
+              }  
+              .si-tooltips{
+                color:$white;
+                width: 93px;
+              }
+              &.si-left:hover,&.si-right:hover{
+                background: $black;
+                &::after {
+                  background: $black;
+                  color: $white;
+                }
+              }
+              &.si-left:hover .si-tooltips,&.si-right:hover .si-tooltips {
+                visibility: visible;
+                opacity: 1;
+            }
+          }  
+          &.si-left{
+           left:11px;
+          }
+          &.si-right{
+            right: 11px;
+            &::after { 
+              transform: rotate(-90deg);
+              left: 2px;
+            }
+          } 
+             
+            }
+          }
+       &.si-team{
+         flex:0 0 11%;
+         width: 11%; 
+       }
+        &.si-ave{
+          flex:0 0 6%;
+          width:6%;
+        } 
+        &.si-cmatch{
+          flex:0 0 7%;
+          width:7%;
+        }
+        &.si-mvalue{
+          flex:0 0 6%;
+          width:6%;
+        } 
+        &.si-rating{
+          flex:0 0 6%;
+          width:6%;
+        } 
+        &.si-value{
+          flex:0 0 11%;
+          width:11%;
+        } 
+        &.si-rvalue{
+          flex:0 0 8%;
+          width:8%;
+        }
+        .si-drpdwn{
+          & select{
+            background-color: transparent;
+            width: 80px;
+            height: 24px;
+            color: $client-secondary-color;
+          }
+        } 
+        input{
+          width:100%;
+          text-align: center;
+          height: 24px;
+          border: 1px dashed;
+          @include border-radius(7px);
+        }
+      } 
+      &__body,tbody { 
+        position: relative;
+        .si-tbls__row{
+          // padding-left: 10px;
+          min-height: 37px;
+        }
+        .si-tbls__cell { 
+          position: relative;
+          padding: 7px 10px;
+          .si-icon{
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            cursor: pointer;
+            margin-bottom: 0;
+            position: absolute;
+            // border:1px solid $black;
+            // @include border-radius(20px);
+            top: 7px;
+             left: 0px;
+            &.si-eye { 
+              position: relative;
+              margin-left: 6px;
+              // flex: 0 0 10% !important;
+              flex: 0 0 24% !important;
+              top:0;
+              &::after {
+                  content: map-get($icons, eye);
+                  font-size: 14px;
+                  color: $client-secondary-color;
+                  
+              } 
+           
+          }  
+       
+             
+            } 
+           
+            .si-tooltips{
+              bottom: -22px;
+              text-align: center !important;
+            .si-tooltipsBox{
+              // max-width: 164px !important;
+              // width: 164px;
+              // word-break: break-all;
+              text-align: center !important; 
+              span{
+                white-space: nowrap;
+              }
+            }
+            } 
+        }    
+        .si-role { 
+          .si-icon{
+            &.si-eye { 
+              flex: 0 0 20% !important;
+            } 
+          }
+        }
+        .si-team{
+          padding-left: 14px;
+        }   
+        .si-player:hover .si-tooltips {
+          visibility: visible;
+          opacity: 1;
+          color: $white;
+          text-align: center !important;
+      } 
+      .si-match:hover .si-tooltips {
+        visibility: visible;
+        opacity: 1;
+        color: $white;
+        text-align: center !important;
+    }    
+      } 
+      &__head,thead{
+        padding-right: 14px;
+        .si-team,.si-role { 
+          position: relative;
+          @extend %flexbox;
+          justify-content: center;
+          align-items: center;
+          word-break: break-all;
+          flex-wrap: wrap;
+          & span{
+            flex:0 0 66%;
+            width:66%;
+          }
+     
+          .si-icon{
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            cursor: pointer;
+            margin-bottom: 0;
+            position: absolute;
+            // border:1px solid $black;
+            // @include border-radius(20px);
+            top: 7px;
+             left: 0px;
+            &.si-sort { 
+              position: relative;
+              margin-left: 10px;
+              flex: 0 0 10% !important;
+              top:0;
+              &::after {
+                  content: map-get($icons, sort);
+                  font-size: 14px;
+                  color: $black;
+                  
+              } 
+           
+          }  
+       
+             
+            } 
+            .si-drpDwn__list{
+              &.active{
+              top: 45px;
+              display: block;
+              padding-top: 0;
+            }   
+            & ul {
+              & li{
+                padding: 10px 12px;
+              }
+            }    
+          } 
+          }   
+          
+          .si-role { 
+            justify-content: flex-start !important ;
+            & span{
+              // flex: 0 0 60% !important;
+              // width: 60% !important;
+              flex:1;
+            padding-left: 12px;
+            }
+          }
+          .si-role {
+            .si-icon{
+              &.si-sort { 
+          
+                &::after {
+              // right:32px;
+                    
+                } 
+             
+            }  
+            }
+          } 
+          .si-value,.si-cmatch,.si-rvalue{
+            @extend %flexbox;
+            justify-content: center;
+            align-items: center;
+            .si-icon{
+              width: 20px;
+              height: 20px;
+              padding: 0;
+              cursor: pointer;
+              margin-bottom: 0;
+              position: absolute;
+              // border:1px solid $black;
+              // @include border-radius(20px);
+              top: 7px;
+               left: 0px;
+              &.si-sort { 
+                position: relative;
+                margin-left: 0px;
+                flex: 0 0 10% !important;
+                top:0;
+                &::after {
+                    content: map-get($icons, sort);
+                    font-size: 14px;
+                    color: $black;
+                    
+                } 
+             
+            }  
+         
+               
+              } 
+          } 
+          .si-rvalue{
+            .si-icon{ 
+              &.si-sort { 
+                &::after{
+              //  right:-9px;
+                }
+              }
+            }
+          }
+      }
+     
+  } 
+  }
+  .si-cover2{
+    @extend %flexbox;
+    position: relative;
+    margin-right: 13px;
+
+  .si-toggleSwitch {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    height: 28px;
+    label{
+      text-transform: capitalize;
+    }
+  } 
+  .si-rightpart{
+    @extend %flexbox;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex:1;
+    .si-btn2{
+      // margin: auto;
+      height: 30px;
+      box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.4);
+      min-width: 150px;
+      margin-left: 15px;
+      position: relative;
+
+      @include border-radius(20px);
+       & input{
+        height: 30px;
+        border: 0;
+        width: 150px;
+        font-family: $medium_font-family;
+        font-weight: $medium_font-weight;
+        color: $white;
+        font-size: 14px;
+        // @include linearGradient(-45deg, #2a0835 50%, #0e0842 100%);
+        // @include linearGradient(-45deg, $client-secondary2-color 0%, $client-primary2-color 50%);
+        background-color: #2E8B57;
+        cursor: pointer;
+        @include border-radius(20px);
+    
+       }
+       .si-icon{
+        &.si-excel{
+          position: absolute;
+          top: 0px;
+          &::after {
+            content: map-get($icons, excel);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            font-size: 20px;
+            // color: $client-secondary-color;
+            position: absolute;
+            font-size: 16px;
+            right: 19px;
+            top: 14px;
+            color:#2E8B57;
+          
+        }
+        } 
+        &.si-cancel{
+          display: none;
+          &::after {
+          content: map-get($icons, cancel) !important;
+          font-size: 12px;
+          }
+        }
+      }  
+      input[disabled] {
+        opacity: 0.7;
+        cursor: initial;
+       color:#0000007d;
+    }
+    }  
+    .si-exc{
+      min-width: 104px;
+      & input{
+       width: 104px;
+       padding-left: 21px;
+       text-align: left;
+       color: #2E8B57;
+       border:1px solid #2E8B57;
+       background: $white;
+      }
+      &:hover{
+        & input{
+          color: #fff;
+          background:#2E8B57 ;
+        } 
+        .si-icon{
+          &.si-excel{
+       
+            &::after {
+         
+              color:#fff;
+            
+          }
+          } 
+       
+        }
+      }
+    }
+    .si-gray{
+      & input{
+      background-color: $gray ;
+      }
+    }
+    .si-dropDown__box{ 
+      .si-drpDwn {
+      &__value {
+        @include border-radius(50px);
+        padding: 7px 10px 7px;
+        padding-right: 40px;
+        height: 30px;
+
+    
+        
+      span {
+        text-transform: capitalize;
+        // font-family: $regular_font-family;
+        // font-weight: $regular_font-weight;
+        font-family: $medium_font-family;
+        font-weight: $medium_font-weight;
+        font-size: 15px;
+        color: $font-color;
+        padding-left: 10px;
+    }
+    }
+  }
+    } 
+    .si-searchBox {
+      // margin-right: 21px;
+     
+
+      & input {
+          width: 153px;
+          @include transition(width, .5s, ease-in-out);
+          float: right;
+          @include border-radius(25px);
+
+          &:focus {
+              width: 100%;
+          }
+    
+      }
+      ::placeholder {
+        color: $gray;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: $gray;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: $gray;
+      } 
+      .si-icon{
+        &.si-search,&.si-cancel{
+          &::after {
+            content: map-get($icons, search);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            font-size: 20px;
+            // color: $client-secondary-color;
+            right: 13px;
+            top: -15px;
+          
+        }
+        } 
+        &.si-cancel{
+          display: none;
+          &::after {
+          content: map-get($icons, cancel) !important;
+          font-size: 12px;
+          }
+        }
+      }
+  } 
+
+  .si-wrp2{
+    position: relative;
+  }
+  .align{
+    flex: 1;
+    @extend %flexbox;
+    justify-content: flex-end;
+    font-family: $bold_font-family;
+    font-weight: $bold_font-weight;
+    position: absolute;
+    font-size:10px;
+    text-align: center;
+    top: -21px;
+    color:$black;
+  }
+  .si-stext{
+    right: 13%;
+  }
+  }
+}

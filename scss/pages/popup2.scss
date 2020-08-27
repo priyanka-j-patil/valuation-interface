@@ -1,0 +1,54 @@
+.si-rolePopup2,
+.si-playerPopup2 {
+    .si-popup-body {
+        padding-bottom: 20px;
+
+        .si-popupwrapper {
+            //overflow: auto;
+            height: calc(100vh - 266px);
+
+            .si-tbls {
+                height: calc(100vh - 266px);
+
+                &__row {
+                    border-bottom: 1px solid rgba($black, .2);
+                }
+
+                &__body,
+                tbody {
+                    height: calc(100% - 58px);
+                    overflow: auto;
+                    display: block !important;
+                }
+
+                &__head,
+                thead,
+                tfoot {
+                    //margin-left: -7.5px;
+                    width: calc(100% - 15px) !important;
+                }
+
+                &__head,
+                tbody,
+                thead,
+                &__row,
+                &__body,
+                tfoot {
+                    table-layout: fixed;
+                    display: table;
+                    width: 100%;
+                }
+
+                &__head,
+                tbody,
+                thead,
+                tfoot,
+                &__row,
+                &__cell,
+                &__body {
+                    border-collapse: collapse;
+                }
+            }
+        }
+    }
+}

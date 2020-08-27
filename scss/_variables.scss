@@ -1,0 +1,78 @@
+//Colors
+$transparent: transparent;
+$default: #404040;
+$gray: #848484;
+$white: #fff;
+$black: #000;
+$green: #008948;
+$red:#ff0000;
+$yellow : #fde940;
+
+//client colors
+$client-primary-color:#130840;
+$client-secondary-color: #f95058;
+$client-complementary-color:#fb574d;
+$client-primary2-color:#fc584c;
+$client-secondary2-color: #f74072;
+$client-deactive-color:#b5b9bb;
+$header-color-1: #2a0835;
+$header-color-2: #0e0842;
+$menu-active: #4e4382;
+$header-bg: #faf3f3;
+$font-color: $client-primary-color;
+$icon-font : 'mss';
+//icons color
+$substitute-up:#66cc33;
+$substitute-down:#b4181e;
+
+// social icons
+$googlePlus:#dd4b39;
+$facebook:#3b5998;
+$twitter:#1da1f2;
+$whatsApp:#7ad06d;
+$instagram:#125688;
+
+//Media Breakpoints
+$media-mobile-ex-small-320: 320px;
+$media-mobile-small: 360px;
+$media-mobile-med: 375px;
+$media-mobile-small-max-380:380px;
+$media-mobile-small-max-420: 420px;
+$media-mobile-small-max: 480px;
+$media-mobile-max-580:580px;
+$media-mobile-max-640:640px;
+$media-mobile-max: 767px; //Mobiles (Landscape)
+$media-tablet-min: 768px;
+$media-tablet-small-max : 812px; //for iphone10, vivov11 pro and one plus 6/6T @media screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)
+$media-tablet-max: 992px; //Tablets, Ipads
+$media-desktop-min: 1024px;
+$media-desktop-max: 1200px;
+$media-laptop-min: 1280px; //Laptops, Desktops
+$media-laptop-max: 1366px;
+$media-ex-large-min: 1367px;
+$media-ex-large-max: 1441px;
+$media-ex-large-hd-max: 1601px;
+$media-xxlarge: 1900px;
+$media-xxlarge-min: 2000px;
+
+$icons :(loginArrow : '\e900',
+    key : '\e901',
+    user : '\e902',
+    downArrow: '\e903',
+    right : '\e904',
+    add:'\e905',
+    edit:'\e906',
+    delete:'\e907',
+    logo:'\e908',
+    menu:'\e909',
+    menuClose:'\e90a',
+    search:'\e90b',
+    save:'\e90c',
+    cancel:'\e90d',
+    minus:'\e90e',
+    logout:'\e90f',
+    eye:'\e910',
+    sort: '\e911',
+    excel:'\e912',
+     
+)

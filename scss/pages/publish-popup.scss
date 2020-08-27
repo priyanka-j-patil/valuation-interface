@@ -1,0 +1,45 @@
+.si-publishPopup{ 
+    &.si-popup-modal{
+    @include border-radius(12px); 
+    .si-popup-close{
+        right: -5px !important;
+        top: -8px !important;
+    }
+    }
+   .si-suretext{
+       font-family: $bold_font-family;
+       font-weight: $bold_font-weight;
+       text-align: center;
+       font-size: 17px;
+       margin-top: 44px;
+       padding-bottom: 20px;
+   } 
+   .si-btnwrp{
+    @extend %flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    .si-yes,.si-no{
+        cursor: pointer;
+      input{
+          width:80px;
+          height: 30px;
+          border: 0px;
+          @include border-radius(8px);
+          color:$white;
+          cursor: pointer;
+      }
+    } 
+    .si-yes{
+        margin-left: 15px;
+        input{
+        background-color: $green;
+        }
+    } 
+    .si-no{ 
+        input{
+        background-color: $gray;
+        }
+    }
+   }
+}
